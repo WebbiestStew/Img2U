@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMG4U</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+</body>
+<main class="container">
+    <h1>📸 Img2U</h1>
+
+    <form id="uploadForm">
+        <input type="file" id="imageInput" accept="image/*" multiple>
+        <button type="submit">Upload</button>
+    </form>
+    <div class="controls">
+        <button type="button" id="clearGallery" class="clear-btn">Clear Gallery</button>
+    </div>
+
+    <section id="gallery">
+        <h2>Uploaded Images</h2>
+        <div class="image-grid" id="imageGrid"></div>
+    </section>
+</main>
 </body>
 </html>
